@@ -37,27 +37,6 @@ body {
   height: 40px;
 }
 
-hr {
-  border: none;
-  height: 5px;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-.main-content {
-  background-image: url("/public/logo512.png");
-  background-size: 360px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: calc(100% + 360px / 2) center;
-  box-shadow: inset 0 0 0 50vw rgba(36, 41, 48, 0.85);
-  padding: 30px;
-  font-weight: 400;
-  font-size: 16pt;
-  min-height: calc(100vh - 120px);
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .spinleft {
     animation: spinleft infinite 20s linear;
@@ -77,6 +56,27 @@ hr {
   .spinright{
     animation: spinright infinite 20s linear;
   }
+}
+
+hr {
+  border: none;
+  height: 5px;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  background-image: url("/public/logo512.png");
+  background-size: 360px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: calc(100% + 360px / 2) center;
+  box-shadow: inset 0 0 0 50vw rgba(36, 41, 48, 0.85);
+  padding: 30px;
+  font-weight: 400;
+  font-size: 16pt;
+  min-height: calc(100vh - 120px);
 }
 
 @keyframes spinright{
