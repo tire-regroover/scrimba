@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
-import Main from "./components/Main"; import { useEffect } from 'react';
+import Main from "./components/Main";
+import { useEffect } from 'react';
 
 const App = () => {
   useEffect(() => {
@@ -13,8 +14,10 @@ const App = () => {
 
   return (
     <div>
+    <div>
       <Navbar />
       <Main />
+    </div>
     </div>
   );
 }
