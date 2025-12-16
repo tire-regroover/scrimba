@@ -58,6 +58,15 @@ body {
   }
 }
 
+@keyframes spinright{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 hr {
   border: none;
   height: 5px;
@@ -77,15 +86,6 @@ hr {
   font-weight: 400;
   font-size: 16pt;
   min-height: calc(100vh - 120px);
-}
-
-@keyframes spinright{
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .main-content ul {
