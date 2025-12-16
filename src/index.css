@@ -58,6 +58,36 @@ hr {
   min-height: calc(100vh - 120px);
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .spinleft {
+    animation: spinleft infinite 20s linear;
+  }
+}
+
+@keyframes spinleft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spinright{
+    animation: spinright infinite 20s linear;
+  }
+}
+
+@keyframes spinright{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .main-content ul {
   margin-left: 10px;
 }

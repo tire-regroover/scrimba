@@ -1,12 +1,22 @@
 import Navbar from "./components/Navbar";
-import Main from "./components/Main";
+import Main from "./components/Main"; import { useEffect } from 'react';
 
-export default function App() {
+const App = () => {
+  useEffect(() => {
+    if (Math.random() < 0.5) {
+      document.querySelector(".nav-logo").classList.add("spinleft");
+    } else {
+      document.querySelector(".nav-logo").classList.add("spinright");
+    }
+
+  }, []);
+
   return (
-    <>
+    <div>
       <Navbar />
-      <hr />
       <Main />
-    </>
+    </div>
   );
 }
+
+export default App;
